@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Kaisei+Tokumin&family=Kiwi+Maru&family=M+PLUS+Rounded+1c&family=Yuji+Syuku&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>MPC（ママもパパもちょっとちょっと）子供抱きかかえデバイス風</title>
+</head>
+<div id="wrap">
+    <div id="logoArea">
+        <img src="svg/logo.svg" alt="">
+    </div>
+    <div id="bankA">
+        <ul id="wrapAEdit" class="d_none">
+            <li class="pad">
+                <p class="editText">PAD<span>1</span></p>
+                <textarea id="valA1" rows="6" placeholder="テキスト入力"></textarea>
+            </li>
+            <li class="pad">
+                <p class="editText">PAD<span>2</span></p>
+                <textarea id="valA2" rows="6" placeholder="テキスト入力"></textarea>
+            </li>
+            <li class="pad">
+                <p class="editText">PAD<span>3</span></p>
+                <textarea id="valA3" rows="6" placeholder="テキスト入力"></textarea>
+            </li>
+            <li class="pad">
+                <p class="editText">PAD<span>4</span></p>
+                <textarea id="valA4" rows="6" placeholder="テキスト入力"></textarea>
+            </li>
+            <li class="pad">
+                <p class="editText">PAD<span>Q</span></p>
+                <textarea id="valA5" rows="6" placeholder="テキスト入力"></textarea>
+            </li>
+            <li class="pad">
+                <p class="editText">PAD<span>W</span></p>
+                <textarea id="valA6" rows="6" placeholder="テキスト入力"></textarea>
+            </li>
+            <li class="pad">
+                <p class="editText">PAD<span>E</span></p>
+                <textarea id="valA7" rows="6" placeholder="テキスト入力"></textarea>
+            </li>
+            <li class="pad">
+                <p class="editText">PAD<span>R</span></p>
+                <textarea id="valA8" rows="6" placeholder="テキスト入力"></textarea>
+            </li>
+            <li class="pad">
+                <p class="editText">PAD<span>A</span></p>
+                <textarea id="valA9" rows="6" placeholder="テキスト入力"></textarea>
+            </li>
+            <li class="pad">
+                <p class="editText">PAD<span>S</span></p>
+                <textarea id="valA10" rows="6" placeholder="テキスト入力"></textarea>
+            </li>
+            <li class="pad">
+                <p class="editText">PAD<span>D</span></p>
+                <textarea id="valA11" rows="6" placeholder="テキスト入力"></textarea>
+            </li>
+            <li class="pad">
+                <p class="editText">PAD<span>F</span></p>
+                <textarea id="valA12" rows="6" placeholder="テキスト入力"></textarea>
+            </li>
+            <li class="pad">
+                <p class="editText">PAD<span>Z</span></p>
+                <textarea id="valA13" rows="6" placeholder="テキスト入力"></textarea>
+            </li>
+            <li class="pad">
+                <p class="editText">PAD<span>X</span></p>
+                <textarea id="valA14" rows="6" placeholder="テキスト入力"></textarea>
+            </li>
+            <li class="pad">
+                <p class="editText">PAD<span>C</span></p>
+                <textarea id="valA15" rows="6" placeholder="テキスト入力"></textarea>
+            </li>
+            <li class="pad">
+                <p class="editText">PAD<span>V</span></p>
+                <textarea id="valA16" rows="6" placeholder="テキスト入力"></textarea>
+            </li>
+            <li>
+                <input id="save" type="button" value="保存" onclick="save();" class="">
+            </li>
+            </ul>
+        <ul id="wrapAPad" class="wrap">
+            <li id="padA1" class="edit">
+                <p></p>
+            </li>
+            <li id="padA2" class="edit">
+                <p></p>
+            </li>
+            <li id="padA3" class="edit">
+                <p></p>
+            </li>
+            <li id="padA4" class="edit">
+                <p></p>
+            </li>
+            <li id="padA5" class="edit">
+                <p></p>
+            </li>
+            <li id="padA6" class="edit">
+                <p></p>
+            <li id="padA7" class="edit">
+                <p></p>
+            </li>
+            <li id="padA8" class="edit">
+                <p></p>
+            </li>
+            <li id="padA9" class="edit">
+                <p></p>
+            </li>
+            <li id="padA10" class="edit">
+                <p></p>
+            </li>
+            <li id="padA11" class="edit">
+                <p></p>
+            </li>
+            <li id="padA12" class="edit">
+                <p></p>
+            </li>
+            <li id="padA13" class="edit">
+                <p></p>
+            </li>
+            <li id="padA14" class="edit">
+                <p></p>
+            </li>
+            <li id="padA15" class="edit">
+                <p></p>
+            </li>
+            <li id="padA16" class="edit">
+                <p></p>
+            </li>
+        </ul>
+    </div>
+
+    <ul>
+        <li>
+            <input id="edit" type="button" value="編集" onclick="edit();">
+        </li>
+    </ul>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
