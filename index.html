@@ -10,6 +10,54 @@
     <link rel="stylesheet" href="css/style.min.css">
     <title>MPC（ママもパパもちょっとちょっと）子供抱きかかえデバイス風</title>
 </head>
+<body>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
+        import { getDatabase, ref, push, set, onChildAdded, remove, onChildRemoved }
+            from "https://www.gstatic.com/firebasejs/9.1.0/firebase-database.js";
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyDX5_6yhvWPxgLShkSSOKLKIqHfdco3JA8",
+            authDomain: "kadai04chat-50f6b.firebaseapp.com",
+            databaseURL: "https://kadai04chat-50f6b-default-rtdb.firebaseio.com",
+            projectId: "kadai04chat-50f6b",
+            storageBucket: "kadai04chat-50f6b.appspot.com",
+            messagingSenderId: "799782573356",
+            appId: "1:799782573356:web:031e39254f015397adc889"
+        };
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app); //RealtimeDBに接続
+        const dbRef = ref(db, "chat"); //RealtimeDB内の"chat"を使う
+
+        //データ登録(Click)
+        $("#save").on("click", function() {
+            const pad = {
+                padA1: $("#valA1").val(),
+                padA2: $("#valA2").val(),
+                padA3: $("#valA3").val(),
+                padA4: $("#valA4").val(),
+                padA5: $("#valA5").val(),
+                padA6: $("#valA6").val(),
+                padA7: $("#valA7").val(),
+                padA8: $("#valA8").val(),
+                padA9: $("#valA9").val(),
+                padA10: $("#valA10").val(),
+                padA11: $("#valA11").val(),
+                padA12: $("#valA12").val(),
+                padA13: $("#valA13").val(),
+                padA14: $("#valA14").val(),
+                padA15: $("#valA15").val(),
+                padA16: $("#valA16").val(),
+            }
+
+            const newPostRef = push(dbRef)
+            set(newPostRef, pad)
+
+        });
+    </script>
+
 <div id="wrap">
     <div id="logoArea">
         <img src="svg/logo.svg" alt="">
