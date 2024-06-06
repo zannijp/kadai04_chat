@@ -203,7 +203,7 @@ const padA1html = `
 <button onclick="copyA1()">${padA1val}</button>
 `;
 if (padA1val === null) {
-    $("#padA1").html("<button></button>");
+    $("#padA1").html("<p class='padText'>PAD<span>1</span></p><button></button>");
 } else {
     $("#padA1").html(padA1html);
 }
@@ -215,7 +215,7 @@ const padA2html = `
 <button onclick="copyA2()">${padA2val}</button>
 `;
 if (padA2val === null) {
-    $("#padA2").html("<button></button>");
+    $("#padA2").html("<p class='padText'>PAD<span>2</span></p><button></button>");
 } else {
     $("#padA2").html(padA2html);
 }
@@ -227,7 +227,7 @@ const padA3html = `
 <button onclick="copyA3()">${padA3val}</button>
 `;
 if (padA3val === null) {
-    $("#padA3").html("<button></button>");
+    $("#padA3").html("<p class='padText'>PAD<span>3</span></p><button></button>");
 } else {
     $("#padA3").html(padA3html);
 }
@@ -239,7 +239,7 @@ const padA4html = `
 <button onclick="copyA4()">${padA4val}</button>
 `;
 if (padA4val === null) {
-    $("#padA4").html("<button></button>");
+    $("#padA4").html("<p class='padText'>PAD<span>4</span></p><button></button>");
 } else {
     $("#padA4").html(padA4html);
 }
@@ -251,7 +251,7 @@ const padA5html = `
 <button onclick="copyA5()">${padA5val}</button>
 `;
 if (padA5val === null) {
-    $("#padA5").html("<button></button>");
+    $("#padA5").html("<p class='padText'>PAD<span>Q</span></p><button></button>");
 } else {
     $("#padA5").html(padA5html);
 }
@@ -263,7 +263,7 @@ const padA6html = `
 <button onclick="copyA6()">${padA6val}</button>
 `;
 if (padA6val === null) {
-    $("#padA6").html("<button></button>");
+    $("#padA6").html("<p class='padText'>PAD<span>W</span></p><button></button>");
 } else {
     $("#padA6").html(padA6html);
 }
@@ -275,7 +275,7 @@ const padA7html = `
 <button onclick="copyA7()">${padA7val}</button>
 `;
 if (padA7val === null) {
-    $("#padA7").html("<button></button>");
+    $("#padA7").html("<p class='padText'>PAD<span>E</span></p><button></button>");
 } else {
     $("#padA7").html(padA7html);
 }
@@ -287,7 +287,7 @@ const padA8html = `
 <button onclick="copyA8()">${padA8val}</button>
 `;
 if (padA8val === null) {
-    $("#padA8").html("<button></button>");
+    $("#padA8").html("<p class='padText'>PAD<span>R</span></p><button></button>");
 } else {
     $("#padA8").html(padA8html);
 }
@@ -299,7 +299,7 @@ const padA9html = `
 <button onclick="copyA9()">${padA9val}</button>
 `;
 if (padA9val === null) {
-    $("#padA9").html("<button></button>");
+    $("#padA9").html("<p class='padText'>PAD<span>A</span></p><button></button>");
 } else {
     $("#padA9").html(padA9html);
 }
@@ -311,7 +311,7 @@ const padA10html = `
 <button onclick="copyA10()">${padA10val}</button>
 `;
 if (padA10val === null) {
-    $("#padA10").html("<button></button>");
+    $("#padA10").html("<p class='padText'>PAD<span>S</span></p><button></button>");
 } else {
     $("#padA10").html(padA10html);
 }
@@ -323,7 +323,7 @@ const padA11html = `
 <button onclick="copyA11()">${padA11val}</button>
 `;
 if (padA11val === null) {
-    $("#padA11").html("<button></button>");
+    $("#padA11").html("<p class='padText'>PAD<span>D</span></p><button></button>");
 } else {
     $("#padA11").html(padA11html);
 }
@@ -335,7 +335,7 @@ const padA12html = `
 <button onclick="copyA12()">${padA12val}</button>
 `;
 if (padA12val === null) {
-    $("#padA12").html("<button></button>");
+    $("#padA12").html("<p class='padText'>PAD<span>F</span></p><button></button>");
 } else {
     $("#padA12").html(padA12html);
 }
@@ -347,7 +347,7 @@ const padA13html = `
 <button onclick="copyA13()">${padA13val}</button>
 `;
 if (padA13val === null) {
-    $("#padA13").html("<button></button>");
+    $("#padA13").html("<p class='padText'>PAD<span>Z</span></p><button></button>");
 } else {
     $("#padA13").html(padA13html);
 }
@@ -359,7 +359,7 @@ const padA14html = `
 <button onclick="copyA14()">${padA14val}</button>
 `;
 if (padA14val === null) {
-    $("#padA14").html("<button></button>");
+    $("#padA14").html("<p class='padText'>PAD<span>X</span></p><button></button>");
 } else {
     $("#padA14").html(padA14html);
 }
@@ -371,7 +371,7 @@ const padA15html = `
 <button onclick="copyA15()">${padA15val}</button>
 `;
 if (padA15val === null) {
-    $("#padA15").html("<button></button>");
+    $("#padA15").html("<p class='padText'>PAD<span>C</span></p><button></button>");
 } else {
     $("#padA15").html(padA15html);
 }
@@ -383,7 +383,7 @@ const padA16html = `
 <button onclick="copyA16()">${padA16val}</button>
 `;
 if (padA16val === null) {
-    $("#padA16").html("<button></button>");
+    $("#padA16").html("<p class='padText'>PAD<span>V</span></p><button></button>");
 } else {
     $("#padA16").html(padA16html);
 }
