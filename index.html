@@ -19,13 +19,13 @@
             from "https://www.gstatic.com/firebasejs/9.1.0/firebase-database.js";
         // Your web app's Firebase configuration
         const firebaseConfig = {
-            apiKey: "",
-            authDomain: "",
-            databaseURL: "",
-            projectId: "",
-            storageBucket: "",
-            messagingSenderId: "",
-            appId: ""
+            apiKey: "AIzaSyDX5_6yhvWPxgLShkSSOKLKIqHfdco3JA8",
+            authDomain: "kadai04chat-50f6b.firebaseapp.com",
+            databaseURL: "https://kadai04chat-50f6b-default-rtdb.firebaseio.com",
+            projectId: "kadai04chat-50f6b",
+            storageBucket: "kadai04chat-50f6b.appspot.com",
+            messagingSenderId: "799782573356",
+            appId: "1:799782573356:web:031e39254f015397adc889"
         };
         const app = initializeApp(firebaseConfig);
         const db = getDatabase(app); //RealtimeDBに接続
@@ -54,11 +54,275 @@
 
             const newPostRef = push(dbRef)
             set(newPostRef, pad)
-
         });
+
+        onChildAdded(dbRef, function(data) {
+            const pad = data.val();
+            const key = data.key;
+
+            // 保存
+            
+            let padA1 = `${pad.padA1}`
+            console.log(padA1);
+            const padA1html = `
+            <p class="padText">PAD<span>1</span></p>
+            <button onclick="copyA1()">${padA1}</button>
+                `;
+            $("#padA1").html(padA1html);
+            $("#valA1").val(padA1);
+
+            let padA2 = `${pad.padA2}`
+            console.log(padA2);
+            const padA2html = `
+            <p class="padText">PAD<span>2</span></p>
+            <button onclick="copyA2()">${padA2}</button>
+                `;
+            $("#padA2").html(padA2html);
+            $("#valA2").val(padA2);
+
+            let padA3 = `${pad.padA3}`
+            console.log(padA3);
+            const padA3html = `
+            <p class="padText">PAD<span>3</span></p>
+            <button onclick="copyA3()">${padA3}</button>
+                `;
+            $("#padA3").html(padA3html);
+            $("#valA3").val(padA3);
+
+            let padA4 = `${pad.padA4}`
+            console.log(padA4);
+            const padA4html = `
+            <p class="padText">PAD<span>4</span></p>
+            <button onclick="copyA4()">${padA4}</button>
+                `;
+            $("#padA4").html(padA4html);
+            $("#valA4").val(padA4);
+
+            let padA5 = `${pad.padA5}`
+            console.log(padA5);
+            const padA5html = `
+            <p class="padText">PAD<span>Q</span></p>
+            <button onclick="copyA5()">${padA5}</button>
+                `;
+            $("#padA5").html(padA5html);
+            $("#valA5").val(padA5);
+
+            let padA6 = `${pad.padA6}`
+            console.log(padA6);
+            const padA6html = `
+            <p class="padText">PAD<span>W</span></p>
+            <button onclick="copyA6()">${padA6}</button>
+                `;
+            $("#padA6").html(padA6html);
+            $("#valA6").val(padA6);
+
+            let padA7 = `${pad.padA7}`
+            console.log(padA7);
+            const padA7html = `
+            <p class="padText">PAD<span>E</span></p>
+            <button onclick="copyA7()">${padA7}</button>
+                `;
+            $("#padA7").html(padA7html);
+            $("#valA7").val(padA7);
+
+            let padA8 = `${pad.padA8}`
+            console.log(padA8);
+            const padA8html = `
+            <p class="padText">PAD<span>R</span></p>
+            <button onclick="copyA8()">${padA8}</button>
+                `;
+            $("#padA8").html(padA8html);
+            $("#valA8").val(padA8);
+
+            let padA9 = `${pad.padA9}`
+            console.log(padA9);
+            const padA9html = `
+            <p class="padText">PAD<span>A</span></p>
+            <button onclick="copyA9()">${padA9}</button>
+                `;
+            $("#padA9").html(padA9html);
+            $("#valA9").val(padA9);
+
+            let padA10 = `${pad.padA10}`
+            console.log(padA10);
+            const padA10html = `
+            <p class="padText">PAD<span>S</span></p>
+            <button onclick="copyA10()">${padA10}</button>
+                `;
+            $("#padA10").html(padA10html);
+            $("#valA10").val(padA10);
+
+            let padA11 = `${pad.padA11}`
+            console.log(padA11);
+            const padA11html = `
+            <p class="padText">PAD<span>D</span></p>
+            <button onclick="copyA11()">${padA11}</button>
+                `;
+            $("#padA11").html(padA11html);
+            $("#valA11").val(padA11);
+
+            let padA12 = `${pad.padA12}`
+            console.log(padA12);
+            const padA12html = `
+            <p class="padText">PAD<span>F</span></p>
+            <button onclick="copyA12()">${padA12}</button>
+                `;
+            $("#padA12").html(padA12html);
+            $("#valA12").val(padA12);
+
+            let padA13 = `${pad.padA13}`
+            console.log(padA13);
+            const padA13html = `
+            <p class="padText">PAD<span>Z</span></p>
+            <button onclick="copyA13()">${padA13}</button>
+                `;
+            $("#padA13").html(padA13html);
+            $("#valA13").val(padA13);
+
+            let padA14 = `${pad.padA14}`
+            console.log(padA14);
+            const padA14html = `
+            <p class="padText">PAD<span>X</span></p>
+            <button onclick="copyA14()">${padA14}</button>
+                `;
+            $("#padA14").html(padA14html);
+            $("#valA14").val(padA14);
+
+            let padA15 = `${pad.padA15}`
+            console.log(padA15);
+            const padA15html = `
+            <p class="padText">PAD<span>C</span></p>
+            <button onclick="copyA15()">${padA15}</button>
+                `;
+            $("#padA15").html(padA15html);
+            $("#valA15").val(padA15);
+
+            let padA16 = `${pad.padA16}`
+            console.log(padA16);
+            const padA16html = `
+            <p class="padText">PAD<span>V</span></p>
+            <button onclick="copyA16()">${padA16}</button>
+                `;
+            $("#padA16").html(padA16html);
+            $("#valA16").val(padA16);
+
+            // 読込       
+            if (padA1 === null) {
+                    $("#padA1").html("<p class='padText'>PAD<span>1</span></p><button></button>");
+            } else {
+                    $("#padA1").html(padA1html);
+            }
+            $("#valA1").val(padA1);
+
+            if (padA2 === null) {
+                    $("#padA2").html("<p class='padText'>PAD<span>V</span></p><button></button>");
+            } else {
+                    $("#padA2").html(padA2html);
+            }
+            $("#valA2").val(padA2);
+
+            if (padA3 === null) {
+                    $("#padA3").html("<p class='padText'>PAD<span>V</span></p><button></button>");
+            } else {
+                    $("#padA3").html(padA3html);
+            }
+            $("#valA3").val(padA3);
+
+            if (padA4 === null) {
+                    $("#padA4").html("<p class='padText'>PAD<span>V</span></p><button></button>");
+            } else {
+                    $("#padA4").html(padA4html);
+            }
+            $("#valA4").val(padA4);
+
+            if (padA5 === null) {
+                    $("#padA5").html("<p class='padText'>PAD<span>V</span></p><button></button>");
+            } else {
+                    $("#padA5").html(padA5html);
+            }
+            $("#valA5").val(padA5);
+
+            if (padA6 === null) {
+                    $("#padA6").html("<p class='padText'>PAD<span>V</span></p><button></button>");
+            } else {
+                    $("#padA6").html(padA6html);
+            }
+            $("#valA6").val(padA6);
+
+            if (padA7 === null) {
+                    $("#padA7").html("<p class='padText'>PAD<span>V</span></p><button></button>");
+            } else {
+                    $("#padA7").html(padA7html);
+            }
+            $("#valA7").val(padA7);
+
+            if (padA8 === null) {
+                    $("#padA8").html("<p class='padText'>PAD<span>V</span></p><button></button>");
+            } else {
+                    $("#padA8").html(padA8html);
+            }
+            $("#valA8").val(padA8);
+
+            if (padA9 === null) {
+                    $("#padA9").html("<p class='padText'>PAD<span>V</span></p><button></button>");
+            } else {
+                    $("#padA9").html(padA9html);
+            }
+            $("#valA9").val(padA9);
+
+            if (padA10 === null) {
+                    $("#padA10").html("<p class='padText'>PAD<span>V</span></p><button></button>");
+            } else {
+                    $("#padA10").html(padA10html);
+            }
+            $("#valA10").val(padA10);
+
+            if (padA11 === null) {
+                    $("#padA11").html("<p class='padText'>PAD<span>V</span></p><button></button>");
+            } else {
+                    $("#padA11").html(padA11html);
+            }
+            $("#valA11").val(padA11);
+
+            if (padA12 === null) {
+                    $("#padA12").html("<p class='padText'>PAD<span>V</span></p><button></button>");
+            } else {
+                    $("#padA12").html(padA12html);
+            }
+            $("#valA12").val(padA12);
+
+            if (padA13 === null) {
+                    $("#padA13").html("<p class='padText'>PAD<span>V</span></p><button></button>");
+            } else {
+                    $("#padA13").html(padA13html);
+            }
+            $("#valA13").val(padA13);
+
+            if (padA14 === null) {
+                    $("#padA14").html("<p class='padText'>PAD<span>V</span></p><button></button>");
+            } else {
+                    $("#padA14").html(padA14html);
+            }
+            $("#valA14").val(padA14);
+
+            if (padA15 === null) {
+                    $("#padA15").html("<p class='padText'>PAD<span>V</span></p><button></button>");
+            } else {
+                    $("#padA15").html(padA15html);
+            }
+            $("#valA15").val(padA15);
+
+            if (padA16 === null) {
+                    $("#padA16").html("<p class='padText'>PAD<span>V</span></p><button></button>");
+            } else {
+                    $("#padA16").html(padA16html);
+            }
+            $("#valA16").val(padA16);
+            });
     </script>
 
 <div id="wrap">
+    <div id="output"></div>
     <div id="logoArea">
         <img src="svg/logo.svg" alt="">
     </div>
